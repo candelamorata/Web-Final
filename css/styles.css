@@ -37,4 +37,95 @@ header{
     background-color: var(--violeta); /* para probar */
 }
 
+
+
+
+/* ACORDEON  */
+
+#acordeon{
+    justify-content: center;
+    display: flex;
+    padding: 3em 0;
+}
+
+.accordion {
+  display: block;
+
+  height: 40vh;
+  background-color: white;
+  line-height: 0;
+}
+
+.accordion-cell {
+  display: inline-block;
+  position: relative;
+  height: 40vh;
+  width: 8vw;
+  transition-property: width;
+  transition-duration: 250ms;
+  background: var(--violeta);
+}
+  
+  .accordion-cell h4 {
     
+    display: block;
+    position: absolute;
+    width: 3em;
+    margin: 0;
+    padding: 0;
+    left: -0rem;
+    bottom: 2em;
+    font-size: 2.5vw;
+    line-height: 1em;
+    text-align: left;
+    color: black;
+    transform: rotate(-90deg);
+    transition-property: left right transform;
+    transition-duration: 250ms;
+    font-family: var(--font);
+    white-space:nowrap;
+  }
+  
+  .accordion-cell-content {
+    display: block;
+    width: 75vw;
+    max-height: 80vh;
+    margin: 0;
+    padding: 4rem;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    overflow: hidden;
+  }
+  .accordion-cell-content p {
+      display: block;
+      margin: 0;
+      padding: 0 0 0 0;
+      font-size: 1.125em;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: white;
+    }
+  
+
+.expanded {
+  width: 35vw;
+  & > h4 {
+      display: none;
+      font-size: 10VW;
+    }
+  & > .accordion-cell-content {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+  }
+  & .accordion-cell h4{
+      display: none;
+  }
+}
+
+.collapsed {
+  width: 6.25vw; 
+  /* cuando esta abitto uno el resto que tamaño tienen  */
+}
