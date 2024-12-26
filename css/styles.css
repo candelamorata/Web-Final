@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --fondo: #f5f4f0;
+    --verde: #47AC6A;
+    --rosa: #FB9BAE;
+    --morado:#9B7ED0;
+    --naranja:#FA6327;
+    --azul:#0098EC;
+    --rojo:#F70A10;
+    --amarillo:#FFEEA7;
+    --violeta:#DAD1EC;
+    --gris:#F5F4F0;
+    --font:"Inter", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fondo);
+    
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+header{
+    height: 100vh;
+    background-color: var(--violeta); /* para probar */
+}
+
+    
