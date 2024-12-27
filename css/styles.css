@@ -50,7 +50,6 @@ header{
 
 .accordion {
   display: block;
-
   height: 40vh;
   background-color: white;
   line-height: 0;
@@ -61,9 +60,8 @@ header{
   position: relative;
   height: 40vh;
   width: 8vw;
-  transition-property: width;
   transition-duration: 250ms;
-  background: var(--violeta);
+  background: var(--fondo);
 }
   
   .accordion-cell h4 {
@@ -105,20 +103,20 @@ header{
       line-height: 1.5em;
       letter-spacing: 1px;
       font-weight: 500;
-      color: white;
+      color: var(--fondo);
     }
   
 
 .expanded {
-  width: 35vw;
+  width: 30vw;
   & > h4 {
       display: none;
-      font-size: 10VW;
     }
   & > .accordion-cell-content {
     opacity: 1;
     transition-property: opacity;
     transition-duration: 250ms;
+    padding-left: 4vw;
   }
   & .accordion-cell h4{
       display: none;
@@ -129,3 +127,75 @@ header{
   width: 6.25vw; 
   /* cuando esta abitto uno el resto que tamaño tienen  */
 }
+
+.card{
+  width: 22vw!important;
+  max-width: 283px;
+  background-color: var(--fondo);
+  padding: 0.5em;
+  -webkit-box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
+  -moz-box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
+   box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
+}
+
+.data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.data p{
+  color: var(--rojo);
+  font-size: 0.8em;
+}
+
+.card-text{
+  font-size: 0.7em!important; 
+  text-align: left!important;
+  color: var(--rojo)!important;
+  margin: 1em 0 !important;
+ }
+
+.card-title{
+  text-align: right!important;
+  padding-right: 0.5em!important;
+  color: var(--rosa)!important;
+  white-space:nowrap;
+  font-size: 1.4VW;
+  padding-top: 0.4em;
+}
+
+ .card-img-top{
+  height: 12em;
+  object-fit: cover;
+ }
+
+ .btn{
+  width:100%;
+  padding: 0.1em;
+  color: var(--rosa);
+  background-color: var(--fondo);
+  border: solid 2px var(--rosa);
+  font-family: var(--font);
+ }
+
+ .btn:hover{
+  border: solid 2px var(--rojo);
+  color: var(--rojo);
+  background-color: var(--fondo);
+ }
+
+ .namej{
+  font-size: 2em;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  COLOR: var(--rosa);
+  font-weight: 500;
+ }
+
+ .margin{
+  margin: 0.2em;
+  border: 0.2em solid var(--rojo);
+  border-radius: 5px;
+ }
