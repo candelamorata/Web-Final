@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 body{
@@ -38,20 +39,40 @@ header{
 }
 
 
+/* SCROLL HORIZONTAL  */
 
+#HorScroll{
+  display: flex;
+  overflow-x: hidden;
+}
+#HorScroll .content{
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
 
+}
+
+#HorScroll .content:nth-child(1){
+  background-color: #0098EC;
+}
+#HorScroll .content:nth-child(2){
+  background-color:#9B7ED0;
+}
+#HorScroll .content:nth-child(3){
+  background-color:#FB9BAE;
+}
 /* ACORDEON  */
 
 #acordeon{
     justify-content: center;
     display: flex;
     padding: 3em 0;
+   
 }
 
 .accordion {
   display: block;
   height: 40vh;
-  background-color: white;
   line-height: 0;
 }
 
@@ -62,6 +83,11 @@ header{
   width: 8vw;
   transition-duration: 250ms;
   background: var(--fondo);
+  border-right: 2px solid var(--rojo);
+}
+
+.accordion-cell:last-child{
+  border: none;
 }
   
   .accordion-cell h4 {
@@ -86,7 +112,6 @@ header{
   
   .accordion-cell-content {
     display: block;
-    width: 75vw;
     max-height: 80vh;
     margin: 0;
     padding: 4rem;
@@ -128,6 +153,8 @@ header{
   /* cuando esta abitto uno el resto que tamaño tienen  */
 }
 
+
+/* CARDS DEL ACORDEON  */
 .card{
   width: 22vw!important;
   max-width: 283px;
@@ -166,8 +193,9 @@ header{
 }
 
  .card-img-top{
-  height: 12em;
+  height: 10em;
   object-fit: cover;
+  padding: 0 0.5em;
  }
 
  .btn{
