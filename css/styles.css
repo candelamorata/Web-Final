@@ -12,6 +12,7 @@
     --amarillo:#FFEEA7;
     --violeta:#DAD1EC;
     --gris:#F5F4F0;
+    --negro:#201f1f;
     --font:"Inter", serif;
 }
 
@@ -35,6 +36,62 @@ img {
 header{
     height: 100vh;
     background-color: var(--violeta); /* para probar */
+}
+
+/* MENÚ */
+.navbar{
+    transform: rotate(90deg);
+    background-color: var(--gris)!important;
+    --bs-navbar-hover-color: var(--rosa);
+    transform-origin: right;
+}
+
+.navbar-brand{
+    color: var(--gris);
+    transition: 0.5s;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.1);
+    color: var(--rosa)!important;
+}
+
+.nav-item a{
+    color: var(--negro);
+    transform: rotate(0deg);
+}
+
+.dropdown-menu{
+    background-color:var(--gris) ;
+}
+
+.dropdown-item {
+    width: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-nav{
+ margin-right: 0 !important;
+}
+ /* para botón activo  */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--rosa);
+  
+}
+/* para q al boton estar activo se quede la linea */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show::before{
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--rosa);
+    color: transparent;
+}
+
+.fa-bars{
+    color:var(--rosa);
 }
 
 
