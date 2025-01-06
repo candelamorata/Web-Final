@@ -39,28 +39,37 @@ header{
 }
 
 
-/* SCROLL HORIZONTAL  */
 
-#HorScroll{
+/* Scroll horizontal */
+#ScrollContainer {
   display: flex;
-  overflow-x: hidden;
-}
-#HorScroll .content{
-  height: 100vh;
+  overflow: hidden;
   width: 100vw;
-  flex-shrink: 0;
-
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 100px; /* Espacio entre secciones */
 }
 
-#HorScroll .content:nth-child(1){
-  background-color: #0098EC;
+.ScrollContent {
+  width: 300vw; /* Tres veces el ancho de la pantalla */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10vw; /* Espaciado inicial para dar margen */
 }
-#HorScroll .content:nth-child(2){
-  background-color:#9B7ED0;
+
+.ScrollText {
+  font-size: 3rem;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-weight: 700;
+  white-space: nowrap; /* Mantiene el texto en una sola línea */
+  opacity: 1;
 }
-#HorScroll .content:nth-child(3){
-  background-color:#FB9BAE;
-}
+
+
 /* ACORDEON  */
 
 #acordeon{
@@ -84,6 +93,7 @@ header{
   transition-duration: 250ms;
   background: var(--fondo);
   border-right: 2px solid var(--rojo);
+  cursor: pointer;
 }
 
 .accordion-cell:last-child{
@@ -196,6 +206,7 @@ header{
   height: 10em;
   object-fit: cover;
   padding: 0 0.5em;
+  background-color: var(--fondo);
  }
 
  .btn{
@@ -214,12 +225,19 @@ header{
  }
 
  .namej{
-  font-size: 2em;
+  font-size: 1.7em;
+    position: absolute;
+    left: 0.9em;
+    top: 0.6em;
+    COLOR: var(--rosa);
+    font-weight: 800;
+    -webkit-text-stroke: white 1px;
+  /* font-size: 2em;
   position: absolute;
   left: 0.5em;
   top: 0.5em;
   COLOR: var(--rosa);
-  font-weight: 500;
+  font-weight: 500; */
  }
 
  .margin{
@@ -227,3 +245,5 @@ header{
   border: 0.2em solid var(--rojo);
   border-radius: 5px;
  }
+
+ 

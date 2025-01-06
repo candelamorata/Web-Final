@@ -15,16 +15,29 @@ jQuery ( '.accordion-cell' ).click (  function  ( ) {
     }
   } );
 
-// scroll horizontal scroll trigger 
-    gsap.registerPlugin(ScrollTrigger);
 
-    let contents= gsap.utils.toArray(".content");
-    
-    gsap.to(contents,{
-      xPercent: -100 * (contents.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger:"#HorScroll",
-        pin: true,
-      scrub: 1,      },
-    });
+  // Registrar plugin una sola vez
+gsap.registerPlugin(ScrollTrigger);
+
+// Animación 2: Scroll horizontal
+
+gsap.to(".ScrollContent", {
+  x: () => -(document.querySelector(".ScrollContent").scrollWidth - document.documentElement.clientWidth), // Mueve horizontalmente
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#ScrollContainer", // Activa al entrar en esta sección
+    pin: true, // Fija la sección
+    scrub: 1, // Sincroniza con el scroll
+    start: "top top", // Inicia en la parte superior
+    end: () => "+=" + document.querySelector("#ScrollContainer").scrollWidth, // Finaliza después del ancho total
+  },
+});
+
+
+
+
+
+
+
+
+
