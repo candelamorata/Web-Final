@@ -40,10 +40,11 @@ header{
 
 /* MENÚ */
 .navbar{
-    transform: rotate(90deg);
-    background-color: var(--gris)!important;
+    /* transform: rotate(90deg); */
+    background-color: var(--morado)!important;
     --bs-navbar-hover-color: var(--rosa);
     transform-origin: right;
+    top: 0;
 }
 
 .navbar-brand{
@@ -96,26 +97,117 @@ header{
 
 
 /* sección galeria imagenes  */
-.gallery-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: -2em;
+.gallery-item2 {
+    /* border: 3px solid red; */
+    height: 20vh;
+    margin-left: 7em;
 }
 
-.text-block {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.image-placeholder {
-    background-color: #e9ecef;
-    border: 1px solid #dee2e6;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
+.gallery-item2 img{
+    height: 20vh;
+    width: 130vh;
     object-fit: cover;
+    padding-bottom: 1em;
+}
+
+.gallery-item3{
+    margin-left: 1em;
+    flex: none; 
+    max-width: 20vh; 
     
 }
-.image-placeholder span {
-    color: #6c757d;
+
+.gallery-item3 img{
+    height: 85vh;
+    width: 15vh;
+    object-fit: cover;
+}
+
+#gallery > div.row{
+    width: 100%;
+}
+
+.gallery-item4{
+    display: flex;
+    flex-direction: column;
+    width: 58vh;
+}
+
+#gallery > div.row > div.gallery-item4.col > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+#gallery > div.row > div.gallery-item4.col > div > p{
+    width: 60vh;
+}
+
+#gallery > div.row > div.gallery-item4.col > div:nth-child(2){
+    display: flex;
+   align-items: center;
+}
+
+.gallery-item4 img{
+    height: 40vh;
+    width: 29vh;
+    object-fit: cover;
+    padding: 0.8em;
+}
+
+.item4-imgs{
+    align-content: center;
+}
+
+#gallery > div.row > div.gallery-item4.col > div:nth-child(2) > img:nth-child(2){
+    height: 20vh;
+    width: 50vh;
+    object-fit: cover;
+    padding: 0.5em;
+}
+
+.item4-title{
+    margin-top: -2em;
+    width: 45vh;
+    z-index: 1;
+}
+
+.item4-img3{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -6em;
+}
+
+#gallery > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
+    height: 25vh;
+    margin-top: 6em;
+}
+
+.gallery-item5{
+   display: flex;
+} 
+
+.gallery-item5 img{
+    height: 60vh;
+    width: 50vh;
+    object-fit: cover;
+}
+
+#gallery > div.row > div.gallery-item5.col > div:nth-child(2) > h1{
+    width: 42vh;
+    margin-left: -3em;
+    font-size: 7vh;
+}
+
+#gallery > div.row > div.gallery-item5.col > div:nth-child(3) > img{
+    height: 73vh;
+    width: 35vh;
+    object-fit: cover;
+    margin-top: 5em;
+}
+
+.item5-texto h2{
+    margin-left: -10.5em;
+    margin-top: -1.5em;
+    font-size: 7vh;
 }
