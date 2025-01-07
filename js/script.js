@@ -15,7 +15,6 @@ jQuery ( '.accordion-cell' ).click (  function  ( ) {
     }
   } );
 
-
  
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +38,7 @@ gsap.to(".reveal", {
   x: "0%", // Mueve el texto a su posición original
   duration: 1, // Duración de la animación
   scrollTrigger: {
-    trigger: "#HorScroll", // Inicia la animación cuando entra en la sección #HorScroll
+    trigger: "#ApScroll", // Inicia la animación cuando entra en la sección #ApScroll
     start: "top 80%", // Empieza la animación cuando el top de la sección esté al 80% de la pantalla
     end: "top 30%", // Termina la animación cuando el top de la sección esté al 30% de la pantalla
     scrub: 1, // Sincroniza el scroll con la animación

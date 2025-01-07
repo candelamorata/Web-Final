@@ -1,5 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root {
     --fondo: #f5f4f0;
@@ -25,6 +27,7 @@
 
 body{
     background-color: var(--fondo);
+    overflow-x: hidden;
     
 }
 
@@ -35,42 +38,64 @@ img {
 
 header{
     height: 100vh;
+    width: 100vw;
     background-color: var(--violeta); /* para probar */
 }
 
 
 
 /* Scroll horizontal */
+
 #ScrollContainer {
   display: flex;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: 100px; /* Espacio entre secciones */
+  margin-bottom:1vw; 
+  background-color: var(--amarillo);
 }
 
 .ScrollContent {
-  width: 300vw; /* Tres veces el ancho de la pantalla */
+  width: auto; /*(240vw?) */
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 10vw; /* Espaciado inicial para dar margen */
+  justify-content: center;
+  padding-left: 5vw; 
+  
 }
 
 .ScrollText {
-  font-size: 3rem;
-  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 9vw;
+  font-family: "Fjalla One", serif;;
   font-weight: 700;
-  white-space: nowrap; /* Mantiene el texto en una sola línea */
-  opacity: 1;
+  white-space: nowrap; 
+  padding: 1.5vw;
+  color: var(--naranja);
 }
 
-/* aparece texto */
-#HorScroll {
+.ScrollImageCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ScrollImage {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+
+
+/* aparece seccion*/
+
+#ApScroll {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -100,24 +125,28 @@ header{
     justify-content: center;
     display: flex;
     padding: 3em 0;
+    align-items: stretch; 
+    width: 100%;
    
 }
 
 .accordion {
-  display: block;
-  height: 40vh;
-  line-height: 0;
+  display: flex; 
+  flex-direction: row; 
+  align-items: stretch; 
 }
 
+
 .accordion-cell {
-  display: inline-block;
+  display: flex; 
   position: relative;
-  height: 40vh;
+  height: 100%; 
   width: 8vw;
   transition-duration: 250ms;
   background: var(--fondo);
   border-right: 2px solid var(--rojo);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .accordion-cell:last-child{
@@ -154,6 +183,7 @@ header{
     transition-duration: 250ms;
     overflow: hidden;
   }
+
   .accordion-cell-content p {
       display: block;
       margin: 0;
@@ -197,6 +227,14 @@ header{
   -webkit-box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
   -moz-box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
    box-shadow: 5px 6px 22px -9px rgba(163,160,163,1);
+
+   transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.expanded .card {
+  transform: translateY(-2em);
+  transition: transform 0.5s ease-out;
 }
 
 .data{
@@ -208,6 +246,7 @@ header{
 .data p{
   color: var(--rojo);
   font-size: 0.8em;
+  white-space:nowrap;
 }
 
 .card-text{
@@ -270,4 +309,84 @@ header{
   border-radius: 5px;
  }
 
+ @media (max-width: 1100px) {
+  .card{
+    width: 26vw !important;
+  }
+  .card-title{
+    font-size: 1.9VW;
+  }
+  .ScrollText{
+    font-size: 12vw;
+
+  }
+ }
+ @media (max-width: 1000px) {
+  .card-text{
+  font-size: 0.6em !important;
+ }
+ .data p{
+  font-size: 0.6em;
+ }
+}
  
+ @media (max-width: 900px) {
+  .ScrollText{
+    font-size: 15vw;
+  }
+
+  /* acordeon vertical  */
+  .accordion {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .accordion-cell {
+    width: 100%; 
+    height: auto; 
+    border-right: none;
+    border-bottom: 2px solid var(--rojo);
+  }
+
+  .accordion-cell h4 {
+    transform: none; 
+    font-size: 1.5em; 
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .accordion-cell-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    padding-left: 1em;
+  }
+
+  .expanded .accordion-cell-content {
+    max-height: 100vh; 
+    opacity: 1; 
+  }
+
+  .card{
+    width: 70vw !important;
+  }
+
+}
+ 
+ 
+ 
+ @media (max-width: 800px) {
+  .data p{
+    font-size: 0.8em;
+   }
+  .ScrollText{
+    font-size: 17vw;
+  }
+  
+@media (max-width: 600px) {
+  .ScrollText{
+    font-size: 20vw;
+  }
+}
+ }
