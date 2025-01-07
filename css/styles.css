@@ -38,67 +38,10 @@ header{
     background-color: var(--violeta); /* para probar */
 }
 
-/* MENÚ */
-.navbar{
-    /* transform: rotate(90deg); */
-    background-color: var(--morado)!important;
-    --bs-navbar-hover-color: var(--rosa);
-    transform-origin: right;
-    top: 0;
-}
-
-.navbar-brand{
-    color: var(--gris);
-    transition: 0.5s;
-}
-
-.navbar-brand:hover{
-    transform: scale(1.1);
-    color: var(--rosa)!important;
-}
-
-.nav-item a{
-    color: var(--negro);
-    transform: rotate(0deg);
-}
-
-.dropdown-menu{
-    background-color:var(--gris) ;
-}
-
-.dropdown-item {
-    width: auto;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-.navbar-nav{
- margin-right: 0 !important;
-}
- /* para botón activo  */
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--rosa);
-  
-}
-/* para q al boton estar activo se quede la linea */
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show::before{
-    width: 100%;
-}
-
-.navbar-toggler {
-    border: 1px solid var(--rosa);
-    color: transparent;
-}
-
-.fa-bars{
-    color:var(--rosa);
-}
-
 
 /* sección galeria imagenes  */
+
 .gallery-item2 {
-    /* border: 3px solid red; */
     height: 20vh;
     margin-left: 7em;
 }
@@ -107,7 +50,7 @@ header{
     height: 20vh;
     width: 130vh;
     object-fit: cover;
-    padding-bottom: 1em;
+    padding: 1em 0em;
 }
 
 .gallery-item3{
@@ -141,6 +84,8 @@ header{
 
 #gallery > div.row > div.gallery-item4.col > div > p{
     width: 60vh;
+    font-weight: 500;
+    text-align: justify;
 }
 
 #gallery > div.row > div.gallery-item4.col > div:nth-child(2){
@@ -172,6 +117,10 @@ header{
     z-index: 1;
 }
 
+.item4-title h1{
+    font-weight: 900;
+}
+
 .item4-img3{
     display: flex;
     justify-content: flex-end;
@@ -179,8 +128,8 @@ header{
 }
 
 #gallery > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
-    height: 25vh;
-    margin-top: 6em;
+    height: 28vh;
+    margin-top: 5em;
 }
 
 .gallery-item5{
@@ -193,15 +142,23 @@ header{
     object-fit: cover;
 }
 
+#gallery > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
+    margin-top: 1em;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
 #gallery > div.row > div.gallery-item5.col > div:nth-child(2) > h1{
     width: 42vh;
     margin-left: -3em;
     font-size: 7vh;
+    font-weight: 900;
 }
 
 #gallery > div.row > div.gallery-item5.col > div:nth-child(3) > img{
     height: 73vh;
-    width: 35vh;
+    width: 40vh;
     object-fit: cover;
     margin-top: 5em;
 }
@@ -210,4 +167,6 @@ header{
     margin-left: -10.5em;
     margin-top: -1.5em;
     font-size: 7vh;
+    font-weight: 900;
 }
+/* sección galeria imagenes FINAL */
