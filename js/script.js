@@ -16,7 +16,7 @@ jQuery ( '.accordion-cell' ).click (  function  ( ) {
   } );
 
 
-  // Registrar plugin una sola vez
+ 
 gsap.registerPlugin(ScrollTrigger);
 
 // Animación 2: Scroll horizontal
@@ -30,6 +30,20 @@ gsap.to(".ScrollContent", {
     scrub: 1, // Sincroniza con el scroll
     start: "top top", // Inicia en la parte superior
     end: () => "+=" + document.querySelector("#ScrollContainer").scrollWidth, // Finaliza después del ancho total
+  },
+});
+
+// aparece el texto 
+gsap.to(".reveal", {
+  opacity: 1, // Hace que el texto sea visible
+  x: "0%", // Mueve el texto a su posición original
+  duration: 1, // Duración de la animación
+  scrollTrigger: {
+    trigger: "#HorScroll", // Inicia la animación cuando entra en la sección #HorScroll
+    start: "top 80%", // Empieza la animación cuando el top de la sección esté al 80% de la pantalla
+    end: "top 30%", // Termina la animación cuando el top de la sección esté al 30% de la pantalla
+    scrub: 1, // Sincroniza el scroll con la animación
+    // markers: true, 
   },
 });
 

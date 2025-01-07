@@ -69,6 +69,30 @@ header{
   opacity: 1;
 }
 
+/* aparece texto */
+#HorScroll {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.reveal {
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  opacity: 0; /* Empieza invisible */
+  transform: translateX(-100%); /* Empieza desplazada a la izquierda */
+}
+
 
 /* ACORDEON  */
 
