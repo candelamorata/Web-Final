@@ -33,6 +33,13 @@ img {
     vertical-align: middle;
 }
 
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+
 header{
     height: 100vh;
     background-color: var(--violeta); /* para probar */
@@ -67,6 +74,7 @@ header{
 .navbar-brand:hover{
     transform: scale(1.1);
     color: var(--rosa)!important;
+    transition: 0.5s;
 }
 
 .nav-item {
@@ -120,7 +128,6 @@ header{
 .fa-bars{
     color:var(--rosa);
 } 
-
 
 
 /* sección galeria imagenes  */
@@ -371,14 +378,199 @@ footer .copy {
 }
 
 @media screen and (max-width: 1030px) {
-
-        .gallery-item2, .gallery-item3, .gallery-item4 {
-           width: 40vh;
-           height: 40vh;
-        }
-
-       .gallery-item5{
-        width: 10%;
-        height: 10%;
-       }
+    
+    .gallery-item2 img{
+        width: 125vh;
+        margin-left: -10em;
     }
+
+    #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
+        margin-top: 1em;
+        position: relative;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
+        width: 45vh;
+        height: 30vh;
+        margin-left: 15em;
+        margin-top: -7em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1){
+        margin-top: -3em;
+    }
+    .item4-title h1 {
+        margin-left: 3.9em;
+        width: 40vh;
+        margin-top: -3em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
+        margin-top: 1em;
+        height: 43vh;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
+        margin-left: 2em; 
+        margin-top: -2em;
+    }
+
+    .gallery-item5{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 30vh;
+    }
+
+    .item5-imgTT {
+        width: 100vh;
+        margin-top: -6em;
+        padding-left: 35em;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
+        width: 71vh;
+        margin-top: -9.2em;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div.item5-texto {
+        max-width: 0vh;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div.item5-texto > img{
+        display: none;
+    }
+
+    .item5-texto h2 {
+        margin-left: -0.5em;
+        margin-top: -12.2em;
+        font-size: 6vh;
+        width: 75vh;
+        height: 12vh;
+        text-align: right;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 850px){
+  
+    .gallery-item2 img{
+        width: 120vh;
+        margin-left: -8.9em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
+        width: 51vh;
+        height: 27vh;
+    }
+}
+
+@media screen and (max-width: 750px){
+     
+
+    .gallery-item2 img{
+        width: 97vh;
+        margin-left: -11em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
+        display: none;
+    }
+
+    .gallery-item3 img{
+        margin-left: -3em;
+    }
+
+    .item5-texto h2{
+        display: none;
+    }
+
+    .gallery-item4{
+        margin-left: -2em;
+    }
+
+    .item4-title h1{
+        margin-left: 4.3em;
+        height: 20vh;
+        font-size: 8vh;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
+        margin-top: 0em;
+        margin-bottom: 3em;
+    }
+
+    .item5-imgTT .item5-title h1{
+        width: 42vh;
+        position: relative;
+        margin-top: 2.5em;
+        text-align: right;
+        margin-right: -0.5em;
+    }
+
+    .gallery-item5 img {
+        height: 35vh;
+        width: 27vh;
+        margin-top: 1em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
+        margin-left: 2em;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
+        width: 53vh;
+        margin-top: -5.5em;
+        margin-left: 7em;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* body{
+        background-color: rgb(252, 235, 235);
+    } COLOR MONOOOO*/
+
+    .gallery-item2 img{
+        width: 75vh;
+        margin-left: -6em;
+    }
+
+    .item4-title h1 {
+        width: 23vh;
+        font-size: 7vh;
+    }
+
+    .gallery-item3 img {
+        margin-left: 0em;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
+        margin-top: 0.5em;
+        margin-bottom: 4em;
+        font-size: 2.5vh;
+        margin-left: 1em;
+        width: 55vh;
+        height: 14vh;
+    }
+
+    #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1) {
+        margin-top: 1em;
+        height: 42vh;
+        margin-left: 1em;
+    }
+
+    .item5-imgTT .item5-title h1 {
+        width: 29vh;
+        position: relative;
+        margin-top: 1.2em;
+        text-align: right;
+        margin-right: -0.5em;
+        font-size: 8vh;
+    }
+
+    #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
+        
+        margin-top: -3.5em;
+        margin-left: 9em;
+         font-size: 2.5VH;
+    }
+
+}   
