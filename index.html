@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Final</title>
+    <link rel="icon" href="media/favicon.svg" type="image/x-icon">
+
+    <!-- fontawesome     -->
+<script src="https://kit.fontawesome.com/d6cf5c9a82.js" crossorigin="anonymous"></script>
 
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -11,22 +15,65 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-
-    </header>
-   <!-- Scroll horizontal -->
-<section id="ScrollContainer">
-  <div class="ScrollContent">
-    <p class="ScrollText">
-      DESCUBRE LOS ICONOS DE LA CULTURA POP JAPONESA
-      <!-- un recorrido lleno de magia, creatividad y nostalgia que ha dado forma a generaciones. -->
-    </p>
-    <div class="ScrollImageCont">
-      <img
+  
+  <header>
+    
+  </header>
+  
+  
+  <!-- Scroll horizontal -->
+  <section id="ScrollContainer">
+    <div class="ScrollContent">
+      <p class="ScrollText">
+        DESCUBRE LOS ICONOS DE LA CULTURA POP JAPONESA
+        <!-- un recorrido lleno de magia, creatividad y nostalgia que ha dado forma a generaciones. -->
+      </p>
+      <div class="ScrollImageCont">
+        <img
         class="ScrollImage" src="media/moñecos.png" alt=""/>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+   <!-- Menú -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">90s Pop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="horoscopo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Iconos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#horoscopo">Gudetama</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Tamagotchi</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Smiski</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Pickmins</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Kobito Ducan</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Mii's</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Animal Crossing</a></li>
+                  <li><a class="dropdown-item" href="#formulario">Toro & Friends</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">General</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acordeon">Conócelos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="footer">Contáctanos</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>   
 
 <!-- aparece el texto  -->
 <section id="ApScroll">
@@ -36,189 +83,320 @@
 </section>
 
 
+<!-- Galería  -->
+<section id="gallery">
+  
+  <div class="container">
+    
+              <div class="gallery-item2 col">
+                    <img src="media/gudetamac2.jpg" alt="">
+              </div>
 
-<!-- ACORDEON   -->
-    <section id="acordeon">
-        <div class="accordion">
-            <div class="accordion-cell">
-              <h4>GUDETAMA</h4>
-              <div class="accordion-cell-content">
-                <div class="card" style="width: 18rem;">
-                  <div class="margin">
-                   <h2 class="card-title">GUDETAMA </h2>
-                   <h3 class="namej">ぐ<br>で<br>た<br>ま</h3>
-                   <img src="media/Gudetama.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <div class="data">
-                      <p>2013</p>
-                      <p>SANRIO</p>
-                      <p>JAPÓN </p>
-                     </div>
-                     <p class="card-text">Conocido por ser un huevo frito perezoso y desmotivado. Desde su debut se ha convertido en un ícono cultural. Gudetama es famoso por su actitud vaga y su tendencia a quejarse de la vida, lo que lo hace entrañable para muchos.</p>
-                     <a href="#" class="btn btn-primary">Web Oficial</a> 
-                   </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="accordion-cell">
-              <h4>TAMAGOTCHI</h4>
-              <div class="accordion-cell-content">
-                <div class="card" style="width: 18rem;">
-                  <div class="margin">
-                   <h2 class="card-title">TAMAGOTCHI </h2>
-                   <h3 class="namej">た<br>ま<br>ご<br>っ<br>ち</h3>
-                   <img src="media/tamagotchi.webp" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <div class="data">
-                      <p>1996 </p>
-                      <p>BANDAI</p>
-                      <p>JAPÓN </p>
-                     </div>
-                     <p class="card-text">Tamagotchi comenzó como un dispositivo en forma de huevo donde los jugadores cuidaban de una mascota virtual. Se popularizó en los 90, convirtiéndose en un fenómeno cultural y dando lugar a posteriores videojuegos y series.</p>
-                     <a href="#" class="btn btn-primary">Web Oficial</a> 
-                   </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="accordion-cell">
-              <h4>ANIMAL CROSSING</h4>
-              <div class="accordion-cell-content">
-                <div class="card" style="width: 18rem;">
-                  <div class="margin">
-                   <h2 class="card-title">ANIMAL CROSSING</h2>
-                   <h3 class="namej">ど<br>う<br>ぶ<br>つ<br>の<br>森</h3>
-                   <img src="media/animalcrossing.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <div class="data">
-                      <p>2001 </p>
-                      <p>NINTENDO</p>
-                      <p>JAPÓN </p>
-                     </div>
-                     <p class="card-text">Dobutsu no Mori en Japón("Bosque de los animales"), es un videojuego de simulador donde un ser humano vive en un pueblo de animales antropomórficos. Es popular por sus personajes entrañables y su naturaleza relajante.</p>
-                     <a href="https://ac-pocketcamp.com/es-ES" class="btn btn-primary">Web Oficial</a> 
-                   </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="accordion-cell">
-              <h4>SMISKI</h4>
-              <div class="accordion-cell-content">
-                <div class="card" style="width: 18rem;">
-                  <div class="margin">
-                   <h2 class="card-title">SMISKI</h2>
-                   <h3 class="namej">ス<br>ミ<br>ス<br>キ</h3>
-                   <img src="media/smiski.webp" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <div class="data">
-                      <p>1996 </p>
-                      <p>DREAMS CO</p>
-                      <p>JAPÓN </p>
-                     </div>
-                     <p class="card-text">Figuras coleccionables de personajes de forma humanoides. Smiski se caracteriza por su apariencia tímida y curiosa que ha ganado popularidad como un objeto decorativo y coleccionable por su entrañable apariencia.</p>
-                     <a href="#" class="btn btn-primary">Web Oficial</a> 
-                   </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="accordion-cell">
-              <h4>PIKMIN</h4>
-              <div class="accordion-cell-content">
-                <div class="card" style="width: 18rem;">
-                  <div class="margin">
-                   <h2 class="card-title">PIKMIN</h2>
-                   <h3 class="namej">ピ<br>ク<br>ミ<br>ン</h3>
-                   <img src="media/pikmins.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <div class="data">
-                      <p>2001</p>
-                      <p>NINTENDO</p>
-                      <p>JAPÓN </p>
-                     </div>
-                     <p class="card-text">Pikmin es un videojuego de Nintendo donde los jugadores controlan a unas simpáticas criaturas. Desde su debut, se han convertido en un emblema de la compañía, apareciendo en varios títulos y ganando popularidad.</p>
-                     <a href="#" class="btn btn-primary">Web Oficial</a> 
-                   </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="accordion-cell">
-                <h4>KOBITO DUKAN</h4>
-                <div class="accordion-cell-content">
-                  <div class="card" style="width: 18rem;">
-                    <div class="margin">
-                     <h2 class="card-title">KOBITO DUKAN </h2>
-                     <h3 class="namej">こ<br>び<br>と<br>づ<br>か<br>ん</h3>
-                     <img src="media/kobitos.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                       <div class="data">
-                        <p>2006</p>
-                        <p>NABATA TOSHITAKA</p>
-                        <p>JAPÓN </p>
-                       </div>
-                       <p class="card-text">Estos traviesos gnomos de jardín, se popularizaron con "The Illustrated Book of Kobitos" apareciendo después en juegos de la 3DS. Son muy populares por su apariencia inquietante kimo-kawaii ("feo-cute").</p>
-                       <a href="#" class="btn btn-primary">Web Oficial</a> 
-                     </div>
-                    </div>
-                 </div>
+              <div class="row">
+                
+              <div class="gallery-item3 col">
+                <div>
+                  <img src="media/tamagotchiC.jpg" alt="">
                 </div>
               </div>
-              <div class="accordion-cell">
-                <h4>Mii´S</h4>
-                <div class="accordion-cell-content">
-                  <div class="card" style="width: 18rem;">
-                    <div class="margin">
-                     <h2 class="card-title">Mii´S </h2>
-                     <h3 class="namej">ミ<br>ー</h3>
-                     <img src="media/miis.png" class="card-img-top" alt="...">
-                     <div class="card-body">
-                       <div class="data">
-                        <p>2006</p>
-                        <p>NINTENDO</p>
-                        <p>JAPÓN </p>
-                       </div>
-                       <p class="card-text">Los Miis son avatares personalizables de Nintendo, introducidos con el debut de la Wii. Su nombre, "Mii," deriva de la palabra inglesa "me" ("yo"). Desde entonces, son un emblema de los videojuegos de los 2000.</p>
-                       <a href="#" class="btn btn-primary">Web Oficial</a> 
-                     </div>
-                    </div>
-                 </div>
+
+              <div class="gallery-item4 col">
+                <div>
+                  <p> Un viaje a la nostalgia. Aquí convergen los mundos y las criaturas que definieron una era, llevando el diseño japonés de los 90 al corazón de quienes nunca dejaron de soñar. </p>
                 </div>
-              </div>
-              <div class="accordion-cell">
-                <h4>TORO & FRIENDS</h4>
-                <div class="accordion-cell-content">
-                  <div class="card" style="width: 18rem;">
-                    <div class="margin">
-                     <h2 class="card-title">TORO & FRIENDS</h2>
-                     <h3 class="namej">井<br>上<br>ト<br>ロ</h3>
-                     <img src="media/torofriends.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                       <div class="data">
-                        <p>1999 </p>
-                        <p>SONY</p>
-                        <p>JAPÓN </p>
-                       </div>
-                       <p class="card-text">Toro es la mascota de Sony en Japón. Apareció por primera vez en el videojuego Doko Demo Issyo. Desde entonces, Toro y sus amigos han sido parte de numerosos juegos de Sony, convirtiéndose en íconos culturales.</p>
-                       <a href="#" class="btn btn-primary">Web Oficial</a> 
-                     </div>
-                    </div>
-                 </div>
+                <div class="item4-imgs">
+                  <img src="media/ACc2.jpg" alt="">
+                  <img src="media/pikminC2.jpg" alt="">
                 </div>
+                <div class="item4-title">
+                  <h1>MINI ICONOS</h1>
+                </div>
+                <div class="item4-img3">
+                    <img src="media/smiskiC3.jpg" alt="">
+                    <img src="media/kobitoC2.jpg" alt="">
+                </div>   
               </div>
+              
+              <div class="gallery-item5 col">
+
+                <div>
+                  <div class="item5-imgTT">
+                    <div>
+                      <img src="media/smiskiC.jpg" alt="">
+                    </div>
+                    
+                    <div class="item5-title">
+                      <h1>90's JAPÓN</h1>
+                    </div> 
+                    
+                  </div>
+                    
+                  <div><p>Pequeños personajes, grandes recuerdos. Aquí celebramos la imaginación sin límites que marcó generaciones.</p> 
+                  </div>
+
+                  <div class="item5-texto">
+                    <img src="media/aCc3.jpg" alt="">
+                    <h2>CULTURA POP EN MINIATURA</h2>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+            
+          </section>
+
+          <!-- <div data-aos="fade-up" data-aos-duration="1500" class="marquee">
+            <ul class="marquee__content">
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>
+              <li class="marquee__item"> <img src="media/moñecos.png" alt=""> </li>   
+            </ul>
+          </div> -->
+          
+          <!-- ACORDEON   -->
+              <section id="acordeon">
+                
+                  <div class="accordion">
+                      <div class="accordion-cell">
+                        <h4>GUDETAMA</h4>
+                        <div class="accordion-cell-content">
+                          <div class="card" style="width: 18rem;">
+                            <div class="margin">
+                             <h2 class="card-title">GUDETAMA </h2>
+                             <h3 class="namej">ぐ<br>で<br>た<br>ま</h3>
+                             <img src="media/Gudetama.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <div class="data">
+                                <p>2013</p>
+                                <p>SANRIO</p>
+                                <p>JAPÓN </p>
+                               </div>
+                               <p class="card-text">Conocido por ser un huevo frito perezoso y desmotivado. Desde su debut se ha convertido en un ícono cultural. Gudetama es famoso por su actitud vaga y su tendencia a quejarse de la vida, lo que lo hace entrañable para muchos.</p>
+                               <a href="#" class="btn btn-primary">Web Oficial</a> 
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="accordion-cell">
+                        <h4>TAMAGOTCHI</h4>
+                        <div class="accordion-cell-content">
+                          <div class="card" style="width: 18rem;">
+                            <div class="margin">
+                             <h2 class="card-title">TAMAGOTCHI </h2>
+                             <h3 class="namej">た<br>ま<br>ご<br>っ<br>ち</h3>
+                             <img src="media/tamagotchi.webp" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <div class="data">
+                                <p>1996 </p>
+                                <p>BANDAI</p>
+                                <p>JAPÓN </p>
+                               </div>
+                               <p class="card-text">Tamagotchi comenzó como un dispositivo en forma de huevo donde los jugadores cuidaban de una mascota virtual. Se popularizó en los 90, convirtiéndose en un fenómeno cultural y dando lugar a posteriores videojuegos y series.</p>
+                               <a href="#" class="btn btn-primary">Web Oficial</a> 
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="accordion-cell">
+                        <h4>ANIMAL CROSSING</h4>
+                        <div class="accordion-cell-content">
+                          <div class="card" style="width: 18rem;">
+                            <div class="margin">
+                             <h2 class="card-title">ANIMAL CROSSING</h2>
+                             <h3 class="namej">ど<br>う<br>ぶ<br>つ<br>の<br>森</h3>
+                             <img src="media/animalcrossing.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <div class="data">
+                                <p>2001 </p>
+                                <p>NINTENDO</p>
+                                <p>JAPÓN </p>
+                               </div>
+                               <p class="card-text">Dobutsu no Mori en Japón("Bosque de los animales"), es un videojuego de simulador donde un ser humano vive en un pueblo de animales antropomórficos. Es popular por sus personajes entrañables y su naturaleza relajante.</p>
+                               <a href="https://ac-pocketcamp.com/es-ES" class="btn btn-primary">Web Oficial</a> 
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="accordion-cell">
+                        <h4>SMISKI</h4>
+                        <div class="accordion-cell-content">
+                          <div class="card" style="width: 18rem;">
+                            <div class="margin">
+                             <h2 class="card-title">SMISKI</h2>
+                             <h3 class="namej">ス<br>ミ<br>ス<br>キ</h3>
+                             <img src="media/smiski.webp" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <div class="data">
+                                <p>1996 </p>
+                                <p>DREAMS CO</p>
+                                <p>JAPÓN </p>
+                               </div>
+                               <p class="card-text">Figuras coleccionables de personajes de forma humanoides. Smiski se caracteriza por su apariencia tímida y curiosa que ha ganado popularidad como un objeto decorativo y coleccionable por su entrañable apariencia.</p>
+                               <a href="#" class="btn btn-primary">Web Oficial</a> 
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="accordion-cell">
+                        <h4>PIKMIN</h4>
+                        <div class="accordion-cell-content">
+                          <div class="card" style="width: 18rem;">
+                            <div class="margin">
+                             <h2 class="card-title">PIKMIN</h2>
+                             <h3 class="namej">ピ<br>ク<br>ミ<br>ン</h3>
+                             <img src="media/pikmins.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <div class="data">
+                                <p>2001</p>
+                                <p>NINTENDO</p>
+                                <p>JAPÓN </p>
+                               </div>
+                               <p class="card-text">Pikmin es un videojuego de Nintendo donde los jugadores controlan a unas simpáticas criaturas. Desde su debut, se han convertido en un emblema de la compañía, apareciendo en varios títulos y ganando popularidad.</p>
+                               <a href="#" class="btn btn-primary">Web Oficial</a> 
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                      <div class="accordion-cell">
+                          <h4>KOBITO DUKAN</h4>
+                          <div class="accordion-cell-content">
+                            <div class="card" style="width: 18rem;">
+                              <div class="margin">
+                               <h2 class="card-title">KOBITO DUKAN </h2>
+                               <h3 class="namej">こ<br>び<br>と<br>づ<br>か<br>ん</h3>
+                               <img src="media/kobitos.jpg" class="card-img-top" alt="...">
+                               <div class="card-body">
+                                 <div class="data">
+                                  <p>2006</p>
+                                  <p>NABATA TOSHITAKA</p>
+                                  <p>JAPÓN </p>
+                                 </div>
+                                 <p class="card-text">Estos traviesos gnomos de jardín, se popularizaron con "The Illustrated Book of Kobitos" apareciendo después en juegos de la 3DS. Son muy populares por su apariencia inquietante kimo-kawaii ("feo-cute").</p>
+                                 <a href="#" class="btn btn-primary">Web Oficial</a> 
+                               </div>
+                              </div>
+                           </div>
+                          </div>
+                        </div>
+                        <div class="accordion-cell">
+                          <h4>Mii´S</h4>
+                          <div class="accordion-cell-content">
+                            <div class="card" style="width: 18rem;">
+                              <div class="margin">
+                               <h2 class="card-title">Mii´S </h2>
+                               <h3 class="namej">ミ<br>ー</h3>
+                               <img src="media/miis.png" class="card-img-top" alt="...">
+                               <div class="card-body">
+                                 <div class="data">
+                                  <p>2006</p>
+                                  <p>NINTENDO</p>
+                                  <p>JAPÓN </p>
+                                 </div>
+                                 <p class="card-text">Los Miis son avatares personalizables de Nintendo, introducidos con el debut de la Wii. Su nombre, "Mii," deriva de la palabra inglesa "me" ("yo"). Desde entonces, son un emblema de los videojuegos de los 2000.</p>
+                                 <a href="#" class="btn btn-primary">Web Oficial</a> 
+                               </div>
+                              </div>
+                           </div>
+                          </div>
+                        </div>
+                        <div class="accordion-cell">
+                          <h4>TORO & FRIENDS</h4>
+                          <div class="accordion-cell-content">
+                            <div class="card" style="width: 18rem;">
+                              <div class="margin">
+                               <h2 class="card-title">TORO & FRIENDS</h2>
+                               <h3 class="namej">井<br>上<br>ト<br>ロ</h3>
+                               <img src="media/torofriends.jpg" class="card-img-top" alt="...">
+                               <div class="card-body">
+                                 <div class="data">
+                                  <p>1999 </p>
+                                  <p>SONY</p>
+                                  <p>JAPÓN </p>
+                                 </div>
+                                 <p class="card-text">Toro es la mascota de Sony en Japón. Apareció por primera vez en el videojuego Doko Demo Issyo. Desde entonces, Toro y sus amigos han sido parte de numerosos juegos de Sony, convirtiéndose en íconos culturales.</p>
+                                 <a href="#" class="btn btn-primary">Web Oficial</a> 
+                               </div>
+                              </div>
+                           </div>
+                          </div>
+                        </div>
+                    </div>
+              </section>
+          
+              <section style=" height: 20vh; margin: 3vw;">
+                
+              </section>
+
+     <!-- PARTCILES -->
+
+  <div id="particles-js">
+    <h3 data-aos="zoom-in" data-aos-duration="1500">¿Quieres saber más?</h3>
+    <div class="jeje position-absolute bottom-0 start-50 translate-middle-x">
+      <a href="mitos.html">
+        <button type="button" class="btn">DESCUBRE</button>
+      </a>
+   </div>
+  </div>
+
+    <footer>
+      <h1 data-aos="fade-down" data-aos-duration="1500">90's Pop Culture</h1>
+      <div data-aos="fade-up" data-aos-duration="1500" class="iconos">
+          <div> <a href="https://www.instagram.com/" target="instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
           </div>
-    </section>
+  
+          <div> <a href="https://www.behance.net/" target="Behance"><i class="fa-brands fa-behance fa-2x"></i></a>
+          </div>
+  
+          <div> <a href="https://twitter.com/" target="Twitter"><i class="fa-brands fa-twitter fa-2x"></i></a></div>
+  
+          <div> <a href="https://www.pinterest.es/" target="Pinterest"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+          </div>
+      </div>
+      <div class="datos">
+          <div data-aos="fade-up" data-aos-duration="1500" class="legal">
+              <h4>90's Culture</h4>
+              <p>CONDICIONES </p>
+              <p>EDICIONES ANTERIORES</p>
+              <p>FAQS</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="legal">
+              <h4>Legal</h4>
+              <p>AVISO LEGAL</p>
+              <p>RGPD</p>
+              <p>PRIVACIDAD</p>
+              <p>COOKIES</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="legal">
+              <h4>Contacto</h4>
+              <p>GENERAL</p>
+              <p>PRENSA</p>
+              <p>PATROCINADORES</p>
+              <p>TRABAJA CON NOSOTROS</p>
+          </div>
+      </div>
+      <div class="copy">
+        90's Pop Culture &copy; | All Rights Reserved
+      </div>
+  
+  </footer>
 
-    <section style=" height: 20vh; margin: 3vw;">
-      
-    </section>
-   
 
 
 <!-- JS de bootstrap  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 <!-- JQ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -229,5 +407,8 @@
 
  <!-- nuestro js  -->
  <script src="js/script.js"></script>
+
+ 
+
 </body>
 </html>
