@@ -32,15 +32,42 @@ gsap.to(".ScrollContent", {
   },
 });
 
-// aparece el texto 
+// ANIMACIONES GALERIA
+// izquierda
 gsap.to(".reveal", {
   opacity: 1, 
-  x: "0%", 
+  x: "50", 
   duration: 1, 
   scrollTrigger: {
-    trigger: "#ApScroll", 
-    start: "top 80%", 
-    end: "top 30%", 
+    trigger: ".item4-imgs", 
+    scrub: 1, // Sincroniza el scroll con la animación
+    // markers: true, 
+  },
+});
+
+// derecha
+gsap.timeline()
+  .to(".reveald", { 
+    opacity: 1,  // El texto se vuelve completamente visible
+    x: -50,      // El texto se mueve hacia su posición final desde la derecha
+    duration: 1,  // Duración de la animación
+    ease: "power2.out", // Efecto de suavizado para la animación
+    scrollTrigger: {
+      trigger: ".item5-title",  
+      scrub: 1, // Sincroniza el scroll con la animación
+      // markers: true, 
+    },
+  });
+
+  // ANIMACION ACORDEON
+gsap.timeline()
+.to(".reveala", { 
+  opacity: 1,  // El texto se vuelve completamente visible
+  y: -70,      // El texto se mueve hacia su posición final desde la derecha
+  duration: 1,  // Duración de la animación
+  ease: "power2.out", // Efecto de suavizado para la animación
+  scrollTrigger: {
+    trigger: "#acordeon",  
     scrub: 1, // Sincroniza el scroll con la animación
     // markers: true, 
   },
