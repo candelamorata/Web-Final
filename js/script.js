@@ -24,7 +24,7 @@ gsap.to(".ScrollContent", {
   x: () => -(document.querySelector(".ScrollContent").scrollWidth - document.documentElement.clientWidth), // Mueve horizontalmente
   ease: "none",
   scrollTrigger: {
-    trigger: "#ScrollContainer", // Activa al entrar en esta sección
+    trigger: "#ScrollContainer", 
     pin: true, // Fija la sección
     scrub: 1, // Sincroniza con el scroll
     start: "top top", // Inicia en la parte superior
@@ -34,24 +34,59 @@ gsap.to(".ScrollContent", {
 
 // aparece el texto 
 gsap.to(".reveal", {
-  opacity: 1, // Hace que el texto sea visible
-  x: "0%", // Mueve el texto a su posición original
-  duration: 1, // Duración de la animación
+  opacity: 1, 
+  x: "0%", 
+  duration: 1, 
   scrollTrigger: {
-    trigger: "#ApScroll", // Inicia la animación cuando entra en la sección #ApScroll
-    start: "top 80%", // Empieza la animación cuando el top de la sección esté al 80% de la pantalla
-    end: "top 30%", // Termina la animación cuando el top de la sección esté al 30% de la pantalla
+    trigger: "#ApScroll", 
+    start: "top 80%", 
+    end: "top 30%", 
     scrub: 1, // Sincroniza el scroll con la animación
     // markers: true, 
   },
 });
 
+// HEADER MOVER IMAGENES 
+const images = document.querySelectorAll('.arrastra');
 
+images.forEach((image) => {
+    image.onmousedown = function (event) {
 
+        document.body.append(image);// Mover la imagen al cuerpo para evitar problemas con el contenedor
 
+        function moveAt(pageX, pageY) {
+            image.style.left = pageX - image.offsetWidth / 2 + 'px';
+            image.style.top = pageY - image.offsetHeight / 2 + 'px';
+        }// Centrar la imagen en las coordenadas
 
+        moveAt(event.pageX, event.pageY);// Colocar la imagen bajo el puntero inicialmente
 
+        function onMouseMove(event) {
+            moveAt(event.pageX, event.pageY);
+        }// Función para mover la imagen con el puntero
 
+        document.addEventListener('mousemove', onMouseMove);// Hacer caso al movimiento del ratón
+
+        image.onmouseup = function () {
+            document.removeEventListener('mousemove', onMouseMove);// Soltar imagen al soltar rató
+            image.onmouseup = null; // Quitar el listener de mouseup
+        };n
+    };
+
+    image.ondragstart = function () {
+        return false;
+    };
+});
+
+// titulo header baja 
+
+gsap.timeline()
+  .to(".big-text", { 
+    opacity: 1,  
+    y: 50,       
+    duration: 1,  
+    ease: "power2.out" 
+  });
 
 
 //partciclesssss
