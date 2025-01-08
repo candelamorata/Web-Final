@@ -42,15 +42,18 @@ header{
 /* MENÚ */
 
 .navbar{
-    transform: rotate(90deg);  
-    background-color: var(--amarillo)!important;
+    background-color: var(--gris)!important;
     --bs-navbar-hover-color: var(--rosa);
     transform-origin: right;
-    top: 0;
-    transform-origin: 10vh 10vh;
-    height: 8vh;
-    width: 100vh;
+    top: 1;
+    border: 1px solid var(--negro);
+    margin: 1em;
+    border-radius: 80px;
+    /* transform-origin: 10vh 10vh;
+    transform: rotate(90deg);    */
 }
+
+
 
 .navbar-brand{
     color: var(--verde);
@@ -58,7 +61,7 @@ header{
     font-size: 4vh;
     font-weight: 700;
     margin-left: 1em;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
 
 .navbar-brand:hover{
@@ -73,13 +76,19 @@ header{
 
 .nav-item a{
     color: var(--negro);
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .dropdown-menu{
-    background-color:var(--amarillo) ;
+    background-color:var(--gris) ;
+}
+
+.dropdown-menu a:hover{
+    background-color:var(--rosa) ;
+    color: var(--amarillo);
+    border-radius: 80px;
 }
 
 .dropdown-item {
@@ -105,6 +114,7 @@ header{
 .navbar-toggler {
     border: 1px solid var(--rosa);
     color: transparent;
+    margin-right: 2em;
 }
 
 .fa-bars{
@@ -156,7 +166,7 @@ header{
     padding-top: 1em;
 }
 
-#gallery > div.row > div.gallery-item4.col > div > p{
+#gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
     width: 60vh;
     font-weight: 500;
     text-align: justify;
@@ -167,22 +177,28 @@ header{
    align-items: center;
 }
 
-.gallery-item4 img{
+ .gallery-item4 img{
     height: 40vh;
-    width: 29vh;
+    width: 40vh;
     object-fit: cover;
     padding: 0.8em;
-}
+} 
 
 .item4-imgs{
     align-content: center;
+    display: flex;
 }
 
-#gallery > div.row > div.gallery-item4.col > div:nth-child(2) > img:nth-child(2){
+#gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
     height: 20vh;
     width: 50vh;
     object-fit: cover;
     padding: 0.5em;
+}
+
+#gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
+    height: 28vh;
+    object-fit: cover;
 }
 
 .item4-title{
@@ -198,12 +214,16 @@ header{
 .item4-img3{
     display: flex;
     justify-content: flex-end;
-    margin-top: -6em;
 }
 
-#gallery > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
+#gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1){
     height: 28vh;
-    margin-top: 5em;
+    object-fit: cover;
+} 
+
+#gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2){
+    margin-left: 5em;
+    margin-top: -3em;
 }
 
 .gallery-item5{
@@ -211,15 +231,23 @@ header{
 } 
 
 .gallery-item5 img{
-    height: 60vh;
-    width: 50vh;
+    height: 40vh;
+    width: 30vh;
     object-fit: cover;
 }
+#gallery > div > div.row > div.gallery-item5.col > div.item5-texto > img{
+    height: 70vh;
+    width: 30vh;
+    object-fit: cover;
+    margin-top: 6em;
 
-#gallery > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
+}
+
+#gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
     margin-top: 1em;
     font-weight: 500;
-    text-align: justify;
+    /* text-align: justify; */
+    margin-left: -1em;
 }
 
 
@@ -235,6 +263,19 @@ header{
     width: 40vh;
     object-fit: cover;
     margin-top: 5em;
+}
+
+.item5-imgTT{
+    display: flex;
+    width: 20vh;
+}
+
+.item5-imgTT .item5-title h1{
+    font-size: 6vh;
+    font-weight: 900;
+    margin-left: -2em;
+    /* margin-right: 20em; */
+    width: 40vh;
 }
 
 .item5-texto h2{
