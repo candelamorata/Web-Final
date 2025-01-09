@@ -48,9 +48,9 @@ gsap.to(".reveal", {
 // derecha
 gsap.timeline()
   .to(".reveald", { 
-    opacity: 1,  // El texto se vuelve completamente visible
-    x: -50,      // El texto se mueve hacia su posición final desde la derecha
-    duration: 1,  // Duración de la animación
+    opacity: 1,  
+    x: -20,    
+    duration: 1, 
     ease: "power2.out", // Efecto de suavizado para la animación
     scrollTrigger: {
       trigger: ".item5-title",  
@@ -62,9 +62,9 @@ gsap.timeline()
   // ANIMACION ACORDEON
 gsap.timeline()
 .to(".reveala", { 
-  opacity: 1,  // El texto se vuelve completamente visible
-  y: -70,      // El texto se mueve hacia su posición final desde la derecha
-  duration: 1,  // Duración de la animación
+  opacity: 1, 
+  y: -70,  
+  duration: 0.8, 
   ease: "power2.out", // Efecto de suavizado para la animación
   scrollTrigger: {
     trigger: "#acordeon",  

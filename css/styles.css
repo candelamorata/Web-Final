@@ -184,6 +184,7 @@ header h1{
      margin: 1em;
      border-radius: 80px;
      height: 3.5em;
+     margin-left: 2em;
      /* transform-origin: 10vh 10vh;
      transform: rotate(90deg);    */
     }
@@ -312,7 +313,7 @@ header h1{
     
     .gallery-item2 img{
     height: 20vh;
-    width: 130vh;
+    width: 120vh;
     object-fit: cover;
     padding: 1em 0em;
 }
@@ -468,30 +469,6 @@ header h1{
 /* sección galeria imagenes FINAL */
 
 
-/* aparece seccion*/
-
-#ApScroll {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.reveal {
-  font-size: 3rem;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  opacity: 0; /* Empieza invisible */
-  transform: translateX(-100%); /* Empieza desplazada a la izquierda */
-}
 
 
 /* ACORDEON  */
@@ -542,7 +519,7 @@ header h1{
     line-height: 1em;
     text-align: left;
     color: black;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) !important;
     transition-property: left right transform;
     transition-duration: 250ms;
     font-family: var(--font);
@@ -647,7 +624,9 @@ header h1{
   padding: 0 0.5em;
   background-color: var(--fondo);
  }
-
+ .card-img-top:hover {
+    border-radius: 0;
+ }
  .btn{
   width:100%;
   padding: 0.1em;
@@ -684,7 +663,6 @@ header h1{
   border: 0.2em solid var(--rojo);
   border-radius: 5px;
  }
-
 
 
 
@@ -734,6 +712,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 }
 
 footer h1 {
@@ -803,75 +782,6 @@ footer .copy {
    font-size: 12vw;
 
  }
-}
-@media (max-width: 1000px) {
- .card-text{
- font-size: 0.6em !important;
-}
-.data p{
- font-size: 0.6em;
-}
-}
-
-@media (max-width: 900px) {
- .ScrollText{
-   font-size: 15vw;
- }
-
- /* acordeon vertical  */
- .accordion {
-   display: flex;
-   flex-direction: column; 
- }
-
- .accordion-cell {
-   width: 100%; 
-   height: auto; 
-   border-right: none;
-   border-bottom: 2px solid var(--rojo);
- }
-
- .accordion-cell h4 {
-   transform: none; 
-   font-size: 1.5em; 
-   text-align: center;
-   padding: 1em 0;
- }
-
- .accordion-cell-content {
-   max-height: 0;
-   overflow: hidden;
-   opacity: 0;
-   transition: max-height 0.3s ease, opacity 0.3s ease;
-   padding-left: 1em;
- }
-
- .expanded .accordion-cell-content {
-   max-height: 100vh; 
-   opacity: 1; 
- }
-
- .card{
-   width: 70vw !important;
- }
-
-}
-
-
-
-@media (max-width: 800px) {
- .data p{
-   font-size: 0.8em;
-  }
- .ScrollText{
-   font-size: 17vw;
- }
- 
-@media (max-width: 600px) {
- .ScrollText{
-   font-size: 20vw;
- }
-}
 }
 
 @media screen and (max-width: 1030px) {
@@ -973,6 +883,15 @@ footer .copy {
     }
 }
 
+@media (max-width: 1000px) {
+    .card-text{
+    font-size: 0.6em !important;
+   }
+   .data p{
+    font-size: 0.6em;
+   }
+   }
+   
 @media screen and (max-width: 990px){
 
     .item5-texto h2{
@@ -982,8 +901,54 @@ footer .copy {
         width: 103vh;
         margin-left: -4.9em;
     }   
+    .navbar .container-fluid{
+        margin-top: -0.8em;
+    }
 }
 
+@media (max-width: 900px) {
+    .ScrollText{
+      font-size: 15vw;
+    }
+   
+    /* acordeon vertical  */
+    .accordion {
+      display: flex;
+      flex-direction: column; 
+    }
+   
+    .accordion-cell {
+      width: 100%; 
+      height: auto; 
+      border-right: none;
+      border-bottom: 2px solid var(--rojo);
+    }
+   
+    .accordion-cell h4 {
+      transform: none !important; 
+      font-size: 1.5em; 
+      text-align: center;
+      padding: 1em 0;
+    }
+   
+    .accordion-cell-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      padding-left: 1em;
+    }
+   
+    .expanded .accordion-cell-content {
+      max-height: 100vh; 
+      opacity: 1; 
+    }
+   
+    .card{
+      width: 70vw !important;
+    }
+   
+   }
 @media screen and (max-width: 850px){
   
     .gallery-item2 img{
@@ -1009,6 +974,21 @@ footer .copy {
             height: 100vh;
         }
 }
+
+@media (max-width: 800px) {
+    .data p{
+      font-size: 0.8em;
+     }
+    .ScrollText{
+      font-size: 17vw;
+    }
+    
+   @media (max-width: 600px) {
+    .ScrollText{
+      font-size: 20vw;
+    }
+   }
+   }
 
 @media screen and (max-width: 750px){
      
