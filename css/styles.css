@@ -125,6 +125,7 @@ header h1{
      margin: 1em;
      border-radius: 80px;
      height: 3.5em;
+     margin-left: 2em;
      /* transform-origin: 10vh 10vh;
      transform: rotate(90deg);    */
     }
@@ -253,7 +254,7 @@ header h1{
     
     .gallery-item2 img{
     height: 20vh;
-    width: 130vh;
+    width: 120vh;
     object-fit: cover;
     padding: 1em 0em;
 }
@@ -419,7 +420,7 @@ header h1{
     padding: 3em 0;
     align-items: stretch; 
     width: 100%;
-    margin-top: 8em;
+    margin-top: 2em;
    
 }
 
@@ -446,7 +447,7 @@ header h1{
   border: none;
 }
   
-  .accordion-header h4 {
+  .accordion-cell h4 {
     
     display: block;
     position: absolute;
@@ -459,20 +460,11 @@ header h1{
     line-height: 1em;
     text-align: left;
     color: black;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) !important;
     transition-property: left right transform;
     transition-duration: 250ms;
     font-family: var(--font);
     white-space:nowrap;
-  }
-  .accordion-cell .icono {
-    display: block;
-    height: 8vw;
-    width: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 1em; 
-    transition: opacity 0.25s ease, transform 0.25s ease;
   }
   
   .accordion-cell-content {
@@ -484,7 +476,6 @@ header h1{
     transition-property: opacity;
     transition-duration: 250ms;
     overflow: hidden;
-    margin-left: -10vw;
   }
 
   .accordion-cell-content p {
@@ -512,10 +503,6 @@ header h1{
   }
   & .accordion-cell h4{
       display: none;
-  }
-  .icono {
-    opacity: 0;
-    transform: scale(0.8);
   }
 }
 
@@ -578,11 +565,9 @@ header h1{
   padding: 0 0.5em;
   background-color: var(--fondo);
  }
-
  .card-img-top:hover {
-    border-radius: 0 !important;
+    border-radius: 0;
  }
-
  .btn{
   width:100%;
   padding: 0.1em;
@@ -606,6 +591,12 @@ header h1{
     COLOR: var(--rosa);
     font-weight: 800;
     -webkit-text-stroke: white 1px;
+  /* font-size: 2em;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  COLOR: var(--rosa);
+  font-weight: 500; */
  }
 
  .margin{
@@ -613,7 +604,6 @@ header h1{
   border: 0.2em solid var(--rojo);
   border-radius: 5px;
  }
-
 
 
 
@@ -664,6 +654,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 }
 
 footer h1 {
@@ -853,7 +844,7 @@ footer .copy {
         margin-left: -4.9em;
     }   
     .navbar .container-fluid{
-        margin-top: -1vw;
+        margin-top: -0.8em;
     }
 }
 
@@ -874,14 +865,9 @@ footer .copy {
       border-right: none;
       border-bottom: 2px solid var(--rojo);
     }
-    .accordion-header {
-        display: flex;
-        align-items: center; 
-        justify-content: flex-start; 
-        padding: 1em; 
-      }
-    .accordion-header h4 {
-      transform: none; 
+   
+    .accordion-cell h4 {
+      transform: none !important; 
       font-size: 1.5em; 
       text-align: center;
       padding: 1em 0;
@@ -905,7 +891,6 @@ footer .copy {
     }
    
    }
-
 @media screen and (max-width: 850px){
   
     .gallery-item2 img{

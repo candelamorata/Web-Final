@@ -49,7 +49,7 @@ gsap.to(".reveal", {
 gsap.timeline()
   .to(".reveald", { 
     opacity: 1,  
-    x: -50,    
+    x: -20,    
     duration: 1, 
     ease: "power2.out", // Efecto de suavizado para la animación
     scrollTrigger: {
