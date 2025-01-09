@@ -409,30 +409,6 @@ header h1{
 /* sección galeria imagenes FINAL */
 
 
-/* aparece seccion*/
-
-#ApScroll {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.reveal {
-  font-size: 3rem;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  opacity: 0; /* Empieza invisible */
-  transform: translateX(-100%); /* Empieza desplazada a la izquierda */
-}
 
 
 /* ACORDEON  */
@@ -470,7 +446,7 @@ header h1{
   border: none;
 }
   
-  .accordion-cell h4 {
+  .accordion-header h4 {
     
     display: block;
     position: absolute;
@@ -489,6 +465,15 @@ header h1{
     font-family: var(--font);
     white-space:nowrap;
   }
+  .accordion-cell .icono {
+    display: block;
+    height: 8vw;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 1em; 
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
   
   .accordion-cell-content {
     display: block;
@@ -499,6 +484,7 @@ header h1{
     transition-property: opacity;
     transition-duration: 250ms;
     overflow: hidden;
+    margin-left: -10vw;
   }
 
   .accordion-cell-content p {
@@ -526,6 +512,10 @@ header h1{
   }
   & .accordion-cell h4{
       display: none;
+  }
+  .icono {
+    opacity: 0;
+    transform: scale(0.8);
   }
 }
 
@@ -589,6 +579,10 @@ header h1{
   background-color: var(--fondo);
  }
 
+ .card-img-top:hover {
+    border-radius: 0 !important;
+ }
+
  .btn{
   width:100%;
   padding: 0.1em;
@@ -612,12 +606,6 @@ header h1{
     COLOR: var(--rosa);
     font-weight: 800;
     -webkit-text-stroke: white 1px;
-  /* font-size: 2em;
-  position: absolute;
-  left: 0.5em;
-  top: 0.5em;
-  COLOR: var(--rosa);
-  font-weight: 500; */
  }
 
  .margin{
@@ -633,12 +621,11 @@ header h1{
 
 /* PARTICLES */
 #particles-js {
-    margin: 2em 5em 0em 5em;
     margin-bottom: 10vw;
     position: relative;
-    height: 70vh;
+    height: 60vh;
     background-color: var(--violeta);
-    border-radius: 50%;
+    width: 100vw;
 }
 
 #particles-js .jeje {
@@ -747,75 +734,6 @@ footer .copy {
 
  }
 }
-@media (max-width: 1000px) {
- .card-text{
- font-size: 0.6em !important;
-}
-.data p{
- font-size: 0.6em;
-}
-}
-
-@media (max-width: 900px) {
- .ScrollText{
-   font-size: 15vw;
- }
-
- /* acordeon vertical  */
- .accordion {
-   display: flex;
-   flex-direction: column; 
- }
-
- .accordion-cell {
-   width: 100%; 
-   height: auto; 
-   border-right: none;
-   border-bottom: 2px solid var(--rojo);
- }
-
- .accordion-cell h4 {
-   transform: none; 
-   font-size: 1.5em; 
-   text-align: center;
-   padding: 1em 0;
- }
-
- .accordion-cell-content {
-   max-height: 0;
-   overflow: hidden;
-   opacity: 0;
-   transition: max-height 0.3s ease, opacity 0.3s ease;
-   padding-left: 1em;
- }
-
- .expanded .accordion-cell-content {
-   max-height: 100vh; 
-   opacity: 1; 
- }
-
- .card{
-   width: 70vw !important;
- }
-
-}
-
-
-
-@media (max-width: 800px) {
- .data p{
-   font-size: 0.8em;
-  }
- .ScrollText{
-   font-size: 17vw;
- }
- 
-@media (max-width: 600px) {
- .ScrollText{
-   font-size: 20vw;
- }
-}
-}
 
 @media screen and (max-width: 1030px) {
     s
@@ -916,6 +834,15 @@ footer .copy {
     }
 }
 
+@media (max-width: 1000px) {
+    .card-text{
+    font-size: 0.6em !important;
+   }
+   .data p{
+    font-size: 0.6em;
+   }
+   }
+   
 @media screen and (max-width: 990px){
 
     .item5-texto h2{
@@ -925,7 +852,59 @@ footer .copy {
         width: 103vh;
         margin-left: -4.9em;
     }   
+    .navbar .container-fluid{
+        margin-top: -1vw;
+    }
 }
+
+@media (max-width: 900px) {
+    .ScrollText{
+      font-size: 15vw;
+    }
+   
+    /* acordeon vertical  */
+    .accordion {
+      display: flex;
+      flex-direction: column; 
+    }
+   
+    .accordion-cell {
+      width: 100%; 
+      height: auto; 
+      border-right: none;
+      border-bottom: 2px solid var(--rojo);
+    }
+    .accordion-header {
+        display: flex;
+        align-items: center; 
+        justify-content: flex-start; 
+        padding: 1em; 
+      }
+    .accordion-header h4 {
+      transform: none; 
+      font-size: 1.5em; 
+      text-align: center;
+      padding: 1em 0;
+    }
+   
+    .accordion-cell-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      padding-left: 1em;
+    }
+   
+    .expanded .accordion-cell-content {
+      max-height: 100vh; 
+      opacity: 1; 
+    }
+   
+    .card{
+      width: 70vw !important;
+    }
+   
+   }
 
 @media screen and (max-width: 850px){
   
@@ -952,6 +931,21 @@ footer .copy {
             height: 100vh;
         }
 }
+
+@media (max-width: 800px) {
+    .data p{
+      font-size: 0.8em;
+     }
+    .ScrollText{
+      font-size: 17vw;
+    }
+    
+   @media (max-width: 600px) {
+    .ScrollText{
+      font-size: 20vw;
+    }
+   }
+   }
 
 @media screen and (max-width: 750px){
      
