@@ -193,7 +193,7 @@ header h1{
     .navbar-brand{
         color: var(--verde);
         /* transition: 0.5s; */
-        font-size: 4vh;
+        font-size: 2vw;
         font-weight: 700;
         margin-left: 1em;
         /* transform: rotate(180deg); */
@@ -787,10 +787,9 @@ footer .copy {
         margin-bottom: 4em;
         width: 45vh;
         margin-left: 25em;
+    } 
 }
-p {
-    }
-}
+
 @media screen and (max-width: 1200px) {
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
         margin-top: -27em;
@@ -988,7 +987,7 @@ p {
         margin-left: -4.9em;
     }   
     .navbar .container-fluid{
-        margin-top: -1em;
+        margin-top: -0.2em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
