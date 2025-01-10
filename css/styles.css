@@ -965,7 +965,7 @@ footer .copy {
         margin-left: -4.9em;
     }   
     .navbar .container-fluid{
-        margin-top: -0.8em;
+        margin-top: -0.5em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
@@ -1188,7 +1188,7 @@ footer .copy {
 
     .gallery-item2 img{
         width: 88vw;
-        margin-left: -11em;
+        margin-left: -8em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
@@ -1240,7 +1240,7 @@ footer .copy {
     }
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
         width: 58vw;
-        margin-top: 0.5em;
+        margin-top: 2.5em;
         margin-left: 24em;
     }
     .gallery-item3 img{
@@ -1268,7 +1268,7 @@ footer .copy {
 
     /* *{
         border: 1px solid palegoldenrod;
-    } */
+    }  */
 
     /* body{
         background-color: rgb(252, 235, 235);
@@ -1290,7 +1290,7 @@ footer .copy {
     .item4-title h1 {
         width: 14vw;
         font-size: 7vw;
-        margin-left: 7em;
+        margin-left: 3em;
     }
 
     .gallery-item3 img {
@@ -1298,9 +1298,9 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1){
-        margin-left: 3em;
-        height: 31vW;
-        width: 43vW;
+        margin-left: -6em;
+        height: 38vW;
+        width: 48vW;
         margin-top: 2em;
     }
 
@@ -1308,7 +1308,7 @@ footer .copy {
         margin-top: 0.5em;
         margin-bottom: 4em;
         font-size: 2.5vw;
-        margin-left: 7em;
+        margin-left: -7em;
         width: 64vw;
         height: 8.75vw;
         
@@ -1331,7 +1331,7 @@ footer .copy {
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
         margin-top: 1.5em;
-        margin-left: 35em;
+        margin-left: 43em;
         font-size: 2.5vw;
         width: 48vw;
     }
@@ -1373,6 +1373,11 @@ footer .copy {
 
 @media screen and (max-width: 500px){
 
+    /* *{
+        border: 1px solid rgb(170, 220, 238);
+    }  */
+
+
     .gallery-item3 img {
         display: none;
     }
@@ -1383,7 +1388,7 @@ footer .copy {
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
         font-size: 2.5vw;
-        margin-left: 7em;
+        margin-left: 18em;
         width: 54vw;
         margin-top: -0.5em;
     }
@@ -1431,7 +1436,7 @@ footer .copy {
 
     .gallery-item5 img {
         margin-top: -2.5em;
-        margin-left: -28em;
+        margin-left: -26em;
         height: 36vw;
     }
 
@@ -1440,11 +1445,11 @@ footer .copy {
         font-size: 2.5vw;
         width: 39vw;
         text-align: right;
-        margin-left: 32em; 
+        margin-left: 40em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1) {
-        margin-left: 8em;
+        margin-left: 17em;
         margin-top: 7em;
     }
 
@@ -1491,6 +1496,12 @@ footer .copy {
 }
 
 @media screen and (max-width: 450px){
+
+    /* *{
+        border: 1px solid rgb(223, 170, 238);
+    }  */
+
+    
     .gallery-item2 img {
         width: 86vw;
         margin-left: -6.2em;
@@ -1507,14 +1518,16 @@ footer .copy {
         font-size: 5.5vh;
     }
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1) {
-        margin-top: 2em;
+        margin-top: 1em;
         width: 33vh;
+        margin-left: 2em;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
-        margin-top: -11.5em;
+        /* margin-top: -11.5em;
         width: 29vh;
-        margin-left: 52em;
+        margin-left: 52em; */
+        display: none;
     }
     .gallery-item5 {
         height: 6vh;
@@ -1548,8 +1561,8 @@ footer .copy {
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img {
         margin-left: 47em;
-        margin-top: -19em;
-        height: 47vw;
+        margin-top: -28em;
+        height: 97vw;
         display: block;
     }
 
