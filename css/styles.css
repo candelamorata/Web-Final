@@ -780,10 +780,10 @@ footer .copy {
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img{
         margin-left: 4em;
     margin-top: 1em;
-    height: 29vh;
+    height: 18vw;
     }
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
-        width: 56vh;
+        width: 35vw;
     }
     .item5-imgTT .item5-title h1{
         margin-left: -5em;
@@ -843,22 +843,22 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
-        width: 55vh;
-        height: 31vh;
-        margin-left: 15em;
+        width: 34vw;
+        height: 19vw;
+        margin-left: 9em;
         margin-top: -7em;
     }
 
     .item4-title h1 {
         margin-left: 3.5em;
-        width: 40vh;
+        width: 25vw;
         margin-top: -2.5em;
-        font-size: 10vh;
+        font-size: 6vw;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
         margin-top: 1em;
-        height: 43vh;
+        height: 27vw;
         /* margin-left: -3em; */
     }
 
@@ -871,19 +871,19 @@ footer .copy {
     .gallery-item5{
         display: flex;
         flex-direction: row-reverse;
-        height: 30vh;
+        height: 19vw;
     }
 
     .gallery-item5 img {
-        width: 24vh;
+        width: 15vw;
         margin-top: -15em;
-        height: 70vh;
+        height: 44vw;
     }
 
     .item5-imgTT {
-        width: 100vh;
+        width: 62.5vw;
         margin-top: -6em;
-        padding-left: 35em;
+        padding-left: 50em;
         display: flex;
         flex-direction: row-reverse;
     }
@@ -891,27 +891,27 @@ footer .copy {
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img {
         margin-left: -6em;
         margin-top: -11em;
-        height: 27vh;
+        height: 17vw;
     }
 
     .item5-imgTT .item5-title h1 {
-        font-size: 11vh;
-        width: 68vh;
+        font-size: 7vw;
+        width: 42vw;
         text-align: right;
-        margin-top: 0.85em;
+        margin-top: -0.6em;
         margin-right: 1em;
         position: relative;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
-        width: 49vh;
-        margin-top: -7em;
+        width: 54vw;
+        margin-top: -4em;
         text-align: right;
         margin-left: 7em;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div.item5-texto {
-        max-width: 0vh;
+        max-width: 0;
     }
     #gallery > div > div.row > div.gallery-item5.col > div.item5-texto > img{
         display: none;
@@ -920,9 +920,8 @@ footer .copy {
     .item5-texto h2 {
         margin-left: -0.5em;
         margin-top: -12.2em;
-        font-size: 6vh;
-        width: 75vh;
-        height: 12vh;
+        font-size:47vw;
+        height: 7.5vw;
         text-align: right;
         position: relative;
     }
@@ -990,7 +989,8 @@ footer .copy {
         margin-top: -19em;
     }
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
-        margin-left: 12em;
+        margin-left: 5em;
+        margin-top: 1em;
     }
     .item5-imgTT .item5-title h1{
         margin-top: 0.5em;
@@ -1045,7 +1045,7 @@ footer .copy {
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img {
         margin-left: -2em;
         margin-top: -2em;
-        height: 17vh;
+        height: 11vw;
    }
    #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
     margin-top: 1em;
@@ -1054,27 +1054,27 @@ footer .copy {
    }
 
    .gallery-item3 img {
-    height: 79vh;
-        width: 19vh;
+    height: 49vw;
+        width: 12vw;
         object-fit: cover;
         margin-left: -2em;
    }
 
    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2) {
-    width: 30vh;
+    width: 19vw;
    }
    .gallery-item2 img{
-    width: 84vh;
+    width: 74vw;
    }
    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1){
-    height: 25vh;
+    height: 16vw;
    }
    #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
-    width: 42vh;
+    width: 26;
    }
    .item4-title h1{
     margin-left: 2.5em;
-    margin-top: -2.2em;
+    margin-top: -1.5em;
         font-size: 9vh;
    }
    .gallery-item5 img{
@@ -1084,9 +1084,9 @@ footer .copy {
     margin-left: 6em;
    }
    #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(2){
-    width: 25vh;
+    width: 16vw;
     margin-top: -8em;
-    height: 28vh;
+    height: 17.5vw;
         margin-left: 10em;
    }
    #ar-container img:nth-child(7){
@@ -1187,7 +1187,7 @@ footer .copy {
     }
 
     .gallery-item2 img{
-        width: 99vh;
+        width: 88vw;
         margin-left: -11em;
     }
 
@@ -1209,20 +1209,20 @@ footer .copy {
 
     .item4-title h1{
         margin-left: 4.3em;
-        height: 20vh;
-        font-size: 8vh;
-        width: 29vh;
+        height: 12.5vw;
+        font-size: 5vw;
+        width: 18vw;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p{
         margin-top: 0em;
         margin-bottom: 3em;
-        width: 68vh;
+        width: 42vw;
         margin-left: 1em;
     }
 
     .item5-imgTT .item5-title h1{
-        width: 42vh;
+        width: 26vw;
         position: relative;
         margin-top: 2.5em;
         text-align: right;
@@ -1230,18 +1230,18 @@ footer .copy {
     }
 
     .gallery-item5 img {
-        height: 35vh;
-        width: 27vh;
-        margin-top: 1em;
+        height: 42vw;
+        width: 33vw;
+        margin-top: -20em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
         margin-left: 2em;
     }
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
-        width: 51vh;
-        margin-top: -0.5em;
-        margin-left: 20em;
+        width: 58vw;
+        margin-top: 0.5em;
+        margin-left: 24em;
     }
     .gallery-item3 img{
         display: none;
@@ -1284,8 +1284,8 @@ footer .copy {
     }
 
     .item4-title h1 {
-        width: 23vh;
-        font-size: 6vh;
+        width: 14vw;
+        font-size: 7vw;
         margin-left: 7em;
     }
 
@@ -1297,38 +1297,39 @@ footer .copy {
         margin-left: 3em;
         height: 31vW;
         width: 43vW;
-        margin-top: -2em;
+        margin-top: 2em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
         margin-top: 0.5em;
         margin-bottom: 4em;
-        font-size: 2.5vh;
-        margin-left: 4em;
-        width: 55vh;
-        height: 14vh;
+        font-size: 2.5vw;
+        margin-left: 7em;
+        width: 64vw;
+        height: 8.75vw;
         
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1) {
         margin-top: 1em;
-        height: 42vh;
+        height: 26vw;
         margin-left: 1em;
     }
 
     .item5-imgTT .item5-title h1 {
-        width: 29vh;
+        width: 35vw;
         position: relative;
         margin-top: 1.2em;
         text-align: right;
         margin-right: -0.5em;
-        font-size: 8vh;
+        font-size: 7vw;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
-        margin-top: 0.5em;
-        margin-left: 19em;
-        font-size: 2.5VH;
+        margin-top: 1.5em;
+        margin-left: 35em;
+        font-size: 2.5vw;
+        width: 48vw;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
@@ -1337,7 +1338,7 @@ footer .copy {
     }
 
     .gallery-item5 {
-        height: 12vh;
+        height: 7.5vw;
     }
 
     footer .datos {
@@ -1372,13 +1373,15 @@ footer .copy {
         display: none;
     }
     .gallery-item2 img {
-        width: 68vh;
+        width: 92vw;
         margin-left: -6.2em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
-        font-size: 2.2vh;
+        font-size: 1.8vh;
         margin-left: 5em;
+        width: 58vw;
+        margin-top: 3.5em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
@@ -1408,7 +1411,7 @@ footer .copy {
     }
 
     .item5-imgTT .item5-title h1 {
-        width: 26vh;
+        width: 116vw;
         margin-top: -1.7em;
         text-align: left;
         margin-right: 5.5em;
@@ -1417,8 +1420,8 @@ footer .copy {
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
         margin-top: -0.5em;
         margin-left: 25em;
-        font-size: 2.2vh;
-        width: 43vh;
+        font-size: 1.3vw;
+        width: 47vw;
         text-align: right;
     }
 
@@ -1429,9 +1432,9 @@ footer .copy {
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
         margin-top: -8.5em;
-        margin-left: 27em;
-        font-size: 2.2vh;
-        width: 43vh;
+        margin-left: 36em;
+        font-size: 3.3vw;
+        width: 51vw;
         text-align: right;
     }
 
@@ -1440,7 +1443,7 @@ footer .copy {
     }
 
     .gallery-item5 {
-        height: 0vh;
+        height: 0;
     }
 
     footer h1 {
@@ -1483,7 +1486,7 @@ footer .copy {
 
 @media screen and (max-width: 450px){
     .gallery-item2 img {
-        width: 54vh;
+        width: 86vw;
         margin-left: -6.2em;
     }
 
@@ -1491,19 +1494,19 @@ footer .copy {
         display: none;
     }
     .item5-imgTT .item5-title h1 {
-        width: 26vh;
-        margin-top: 1.5em;
+        width: 33vh;
+        margin-top: 3em;
         text-align: right;
         margin-right: 4em;
         font-size: 5.5vh;
     }
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1) {
-        margin-top: -2em;
+        margin-top: 2em;
         width: 33vh;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
-        margin-top: -12.5em;
+        margin-top: -11.5em;
         width: 29vh;
         margin-left: 52em;
     }
@@ -1517,8 +1520,8 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-imgTT > div:nth-child(1) > img{
-        transform: translate(85%, 50%);
-        width: 26vh;
+        transform: translate(-13%, 77%);
+        width: 50vw;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-imgTT > div.item5-title > h1{
@@ -1530,15 +1533,17 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
-        font-size: 2.2vh;
-        margin-left: 3em;
+        font-size: 1.5vh;
+        margin-left: 5em;
         margin-bottom: 5em;
+        margin-top: 0.5em;
+        width: 52vw;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img {
         margin-left: 47em;
-        margin-top: -23em;
-        height: 35vh;
+        margin-top: -19em;
+        height: 47vw;
         display: block;
     }
 
