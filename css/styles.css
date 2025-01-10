@@ -1274,6 +1274,10 @@ footer .copy {
         background-color: rgb(252, 235, 235);
     } COLOR MONOOOO*/
 
+    #particles-js h3{
+        font-size: 4vh;
+    }
+
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1){
         margin-bottom: -2em;
     }
@@ -1378,10 +1382,10 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
-        font-size: 1.8vh;
-        margin-left: 5em;
-        width: 58vw;
-        margin-top: 3.5em;
+        font-size: 2.5vw;
+        margin-left: 7em;
+        width: 54vw;
+        margin-top: -0.5em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(2) {
@@ -1411,10 +1415,10 @@ footer .copy {
     }
 
     .item5-imgTT .item5-title h1 {
-        width: 116vw;
-        margin-top: -1.7em;
+        width: 38vw;
+        margin-top: -8.5em;
         text-align: left;
-        margin-right: 5.5em;
+        margin-right: 4.5em;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
@@ -1426,20 +1430,22 @@ footer .copy {
     }
 
     .gallery-item5 img {
-        margin-top: 0.5em;
-        margin-left: -12em;
+        margin-top: -2.5em;
+        margin-left: -28em;
+        height: 36vw;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p {
-        margin-top: -8.5em;
-        margin-left: 36em;
-        font-size: 3.3vw;
-        width: 51vw;
+        margin-top: -13.5em;
+        font-size: 2.5vw;
+        width: 39vw;
         text-align: right;
+        margin-left: 32em; 
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1) {
-       margin-left: 1em;
+        margin-left: 8em;
+        margin-top: 7em;
     }
 
     .gallery-item5 {
