@@ -439,7 +439,7 @@ header h1{
 }
 
 #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img{
-    margin-left: 15em;
+    margin-left: 18em;
     margin-top: -20em;
     height: 72vh;
 }
@@ -775,10 +775,28 @@ footer .copy {
 
 /* MEDIAQUEERIES */
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img{
-        margin-left: 4em;
+        margin-left: 54em;
+    margin-top: -39em;
+    }
+    .item5-texto h2 {
+        margin-left: 0em;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
+        margin-bottom: 4em;
+        width: 45vh;
+        margin-left: 25em;
+}
+p {
+    }
+}
+@media screen and (max-width: 1200px) {
+    #gallery > div > div.row > div.gallery-item5.col > div:nth-child(1) > div:nth-child(2) > p{
+        margin-top: -27em;
+    }
+    #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img{
+        margin-left: 43em;
     margin-top: 1em;
     height: 18vw;
     }
@@ -786,7 +804,8 @@ footer .copy {
         width: 35vw;
     }
     .item5-imgTT .item5-title h1{
-        margin-left: -5em;
+        margin-left: 0em;
+        margin-top: 0.5em;
     }
     .gallery-item2 img{
         width: 75vw;
@@ -889,9 +908,10 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-texto > img {
-        margin-left: -6em;
+        margin-left: -7em;
         margin-top: -11em;
-        height: 17vw;
+        height: 11vw;
+        width: 19vw;
     }
 
     .item5-imgTT .item5-title h1 {
@@ -956,16 +976,19 @@ footer .copy {
    }
    
 @media screen and (max-width: 990px){
+    .gallery-item3 img{
+        display: none;
+    }
 
     .item5-texto h2{
         display: none;
     }
     .gallery-item2 img{
-        width: 103vh;
+        width: 69vw;
         margin-left: -4.9em;
     }   
     .navbar .container-fluid{
-        margin-top: -0.5em;
+        margin-top: -1em;
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-img3 > img:nth-child(1){
@@ -1022,7 +1045,7 @@ footer .copy {
       transform: none !important; 
       font-size: 1.5em; 
       text-align: center;
-      padding: 1em 0;
+      padding: 1em 1em;
     }
    
     .accordion-cell-content {
@@ -1135,6 +1158,8 @@ footer .copy {
 
         #gallery > div > div.row > div.gallery-item4.col > div:nth-child(1) > p {
             width: 60VW;
+            margin-bottom: 4em;
+        margin-left: 3em;
         }
         .gallery-item5 img{
             MARGIN-LEFT: -24VW;
@@ -1298,7 +1323,7 @@ footer .copy {
     }
 
     #gallery > div > div.row > div.gallery-item4.col > div.item4-imgs > img:nth-child(1){
-        margin-left: -6em;
+        margin-left: 2em;
         height: 38vW;
         width: 48vW;
         margin-top: 2em;
@@ -1308,7 +1333,7 @@ footer .copy {
         margin-top: 0.5em;
         margin-bottom: 4em;
         font-size: 2.5vw;
-        margin-left: -7em;
+        margin-left: 4em;
         width: 64vw;
         height: 8.75vw;
         
@@ -1535,11 +1560,11 @@ footer .copy {
 
     .gallery-item5 img {
         margin-top: 10.5em;
-        margin-left: -15em;
+        margin-left: 2em;
     }
 
     #gallery > div > div.row > div.gallery-item5.col > div > div.item5-imgTT > div:nth-child(1) > img{
-        transform: translate(-13%, 77%);
+        transform: translate(-56%, 77%);
         width: 50vw;
     }
 
